@@ -17,9 +17,9 @@ sources:
             freshness:
              warn_after:{90}                
             loaded_at_field: "cast(date_date as timestamp)"
-                  
-            
-                 
+                        
+           
+                
             
       - name: product
         identifier: raw_gz_product
@@ -40,6 +40,14 @@ sources:
             tests:
               - unique
               - not_null
-                  
-              
+
+      - name: int_orders
+        identifier: int_orders_margin
+        columns:
+          - name: orders_id
+              - unique
+              - not_null
+
+
+     
  
